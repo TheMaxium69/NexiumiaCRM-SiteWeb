@@ -16,27 +16,25 @@ head($page); ?>
                 </div>
             </div>
             <div class="purple-div">
-                <div class="white-div">
-                    <h2>Se connecter</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt modi hic voluptas dolore harum aliquid? Ipsum, eaque. Facere eum voluptate sint!evfvtgrtgtgrtgrtgrtg</p>
-            <form>
-                <div class="form-group mb-5">
-                    <input type="text" class="form-control" placeholder="Nom d'utilisateur">
-                </div>
-                <div class="form-group mb-5">
-                    <input type="password" class="form-control" placeholder="Mot de passe">
-                </div>
-                <div class="form-group mb-5">
-                    <input type="email" class="form-control" placeholder="Email">
-                </div>
-                <button type="submit" class="btn btn-dark">Envoyer</button>
-            </form>
-                </div>
-            </div>
-
-
-
-
-
+            <div class="white-div">
+                <h2 class="text-center mb-4">Se connecter</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel laboriosam quae eaque quasi fugit nesciunt laborum porro quod pariatur, corrupti voluptatem quibusdam molestiae dolor aliquam necessitatibus tenetur optio obcaecati quisquam!</p>
+                <form class="mx-5" action="" method="post">
+        <div class="form-group my-4">
+            <label for="email"></label>
+            <input type="email" class="form-control p-3" id="url" name="url" placeholder="url de la société">
+        </div>
+        <div class="form-group my-4">
+            <label for="password"></label>
+            <input type="password" class="form-control p-3" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-group my-4">
+            <label for="password"></label>
+            <input type="password" class="form-control p-3" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn btn-dark btn-block ">Se connecter</button>
+    </form>
+</div>
+</div>
 </html>
 </body>
