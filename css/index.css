@@ -2,3 +2,8 @@
     border-bottom: 1px solid #CCCCCC;
     padding-bottom: 5%;
 }
+
+.border-left-gray {
+    border-left: 1px solid #CCCCCC;
+
+}
