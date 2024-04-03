@@ -7,3 +7,24 @@
     border-left: 1px solid #CCCCCC;
 
 }
+
+ul {
+    list-style: url();
+}
+
+
+.cardAN {
+    background: rgba(242, 242, 242, 0.93);
+    box-shadow: -33px 60px 72px rgba(155, 155, 155, 0.2);
+    border-radius: 30px;
+    border-color: rgba(242, 242, 242, 0.93);
+    margin-right: 10%;
+}
+
+.cardGS {
+    background: rgba(242, 242, 242, 0.93);
+    box-shadow: -33px 60px 72px rgba(155, 155, 155, 0.2);
+    border-radius: 30px;
+    border-color: rgba(242, 242, 242, 0.93);
+    margin-left: 10%;
+}
