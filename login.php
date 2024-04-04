@@ -8,7 +8,7 @@ head($page); ?>
 
 
     <main>
-        <div class="container">
+        <div class="container division">
             <div class="row">
                 <div class="col-12 text-center">
                     <h1 class="">Se connecter</h1>
@@ -36,5 +36,7 @@ head($page); ?>
     </form>
 </div>
 </div>
+</div>
 </html>
 </body>
+<footer> <?php footer(); ?> </footer>
