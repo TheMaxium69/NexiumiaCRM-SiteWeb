@@ -4,14 +4,13 @@
     <div class="container">
         <section class="socials d-flex justify-content-center justify-content-lg-between p-4">
             <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
+            <div class="me-5">
                 <a class="footer-brand" href="#">
                     <img src="file_assets/LogoNex.png" alt="Logo" width="35" height="40" class="d-inline-block align-text-top">
                     NexumiaCRM
                 </a>
             </div>
             <!-- Left -->
-
             <!-- Right -->
             <div class="icons-social">
                 <a href=""><i class="ri-instagram-line fs-4"></i></a>
@@ -36,15 +35,7 @@
                 <a href=""><i class="ri-arrow-up-s-line fs-3"></i></a>
             </div>
         </section>
-
         <!-- Section: Links  -->
-        <section class="links">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-
-                <!-- Grid row -->
-            </div>
-        </section>
         <!-- Section: Links  -->
 
         <!-- Copyright -->
@@ -128,5 +119,27 @@
             color: white;
             border-top: 1px solid #4a4a4a;
         }
+
+        @media (max-width:768px) {
+
+            .footer-brand {
+                text-align: center;
+            }
+
+            .icons-social {
+                text-align: center;
+                flex-direction: row;
+                display: flex;
+            }
+
+            .utils-link {
+                text-align: center;
+                flex-direction: row;
+                display: flex;
+                width: 100%;
+                padding: 0 10px 0 10px;
+            }
+        }
+
     }
 </style>
