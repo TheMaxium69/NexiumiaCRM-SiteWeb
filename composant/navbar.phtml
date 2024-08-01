@@ -1,25 +1,82 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="<?= $env_logo ?>" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            <?= $env_name ?>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <?php for ($i = 0; $i < count($env_page); $i++) {
-                    if ($i !== 0){ ?>
+<section id="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="file_assets/LogoNex.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                NexumiaCRM
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <?php if ($i === $page_id) {  ?>
-                        <a class="nav-link active" style="text-decoration: underline" href="<?= $env_page[$i]['url'] ?>"><?= $env_page[$i]['name'] ?></a>
-                        <?php } else {  ?>
-                        <a class="nav-link" href="<?= $env_page[$i]['url'] ?>"><?= $env_page[$i]['name'] ?></a>
-                        <?php } ?>
+                        <a class="nav-link active" href="">Solution</a>
                     </li>
-                <?php }} ?>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">Devis</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button">
+                            <a class="nav-link" href="">Se connecter</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</section>
+
+<style>
+    #navbar {
+        .navbar {
+            width: 100%;
+            padding: 40px 160px 0 160px;
+        }
+
+        .navbar-brand {
+            font-family: "Jost", sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar-brand img {
+            border-radius: 20%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-item {
+            padding: 0 10px 0 10px;
+        }
+
+        .nav-item button {
+            background-color: #303030;
+            border-radius: 5%;
+            padding: 1px 15px 1px 15px;
+            border: none;
+        }
+
+        .nav-item button a {
+            color: white;
+        }
+
+        @media (max-width: 992px) {
+            .navbar-toggler {
+                margin-left: auto;
+            }
+
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .navbar {
+                padding: 15px 0;
+            }
+        }
+
+    }
+</style>
