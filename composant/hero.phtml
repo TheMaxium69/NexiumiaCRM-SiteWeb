@@ -1,0 +1,118 @@
+<section id="hero">
+    <div class="container">
+        <div class="content">
+            <h1>La Plateforme CRM<br> Que Toute Votre <br> Entreprise Adorera</h1>
+            <p>Fournir Un Excellent Service Client, Répondre À Plus De Tickets Tout-En-Un Principalement Un Logiciel.</p>
+            <div class="buttons">
+                <button>Commencer</button>
+                <button class="btn-secondary">Comment Ça Fonctionne</button>
+            </div>
+            <div class="awards">
+                <img src="file_assets/fivestar.png" alt="5 Star Awards" width="320" height="100">
+            </div>
+        </div>
+        <div class="background-images">
+            <img class="bg-image chart1" src="file_assets/hero.png" alt="chart1">
+        </div>
+    </div>
+    <div class="line"></div>
+</section>
+
+
+<style>
+    header {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #hero {
+        position: relative;
+        padding: 200px 0;
+        text-align: left;
+        overflow: hidden;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .line {
+            border: 1px solid #dedede;
+            margin: 5% 10% 0 10%;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 50%;
+            padding: 0 50px 0 50px;
+            text-align: left;
+        }
+
+        .content h1 {
+            font-family: "Jost", sans-serif;
+            font-style: SemiBold;
+        }
+
+        .content p {
+            font-family: "Open Sans", sans-serif;
+            padding-top: 10px;
+        }
+
+
+        h1 {
+            font-size: 40px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: black;
+            border: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            background-color: #303030;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .awards {
+            padding-top: 40px;
+            border-top: 1px solid #dedede;
+            margin: 50px 5% 0 5%;
+        }
+
+        .background-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .background-images .bg-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
