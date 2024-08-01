@@ -26,14 +26,31 @@ require "@tyrositeframework/start.php"; ?>
 
 
     <style>
+        header {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
         #hero {
+            position: relative;
+            padding: 200px 0;
             text-align: left;
+            overflow: hidden;
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
             #hero .content {
                 position: relative;
                 z-index: 2;
-                width: 100%;
-                padding: 40px 160px 0 160px;
+                max-width: 50%;
+                padding: 40px 180px 0 160px;
             }
 
             h1 {
@@ -76,8 +93,7 @@ require "@tyrositeframework/start.php"; ?>
             }
 
             .background-images .bg-image {
-                position: absolute;
-                width: auto;
+                width: 100%;
                 height: auto;
             }
         }
