@@ -10,7 +10,7 @@ require "@tyrositeframework/start.php"; ?>
 
 <?php $js_exemple(); ?>
 
-<?php $cp_footer(); ?>
+<footer><?php $cp_footer(); ?></footer>
 
 
 
