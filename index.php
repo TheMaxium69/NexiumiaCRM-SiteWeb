@@ -5,6 +5,18 @@ require "@tyrositeframework/start.php"; ?>
 
 <main>
     <?php $cp_hero(); ?>
+
+    <section class="premium-content">
+        <div class="container">
+            <div class="intro">
+                <h2>Explorez Les Fonctionnalités Premium</h2>
+                <p>Suite logicielle unique et puissante pour gérer l'ensemble de votre entreprise, présentée par une entreprise ayant une vision à long terme pour transformer votre façon de travailler. </p>
+            </div>
+        </div>
+    </section>
+
+
+
 </main>
 
 
