@@ -157,6 +157,10 @@ require "@tyrositeframework/start.php"; ?>
                 text-align: center;
             }
 
+            .content-card p {
+                text-align: center;
+            }
+
             .content-card .icon {
                 text-align: center;
             }
