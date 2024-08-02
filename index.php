@@ -37,6 +37,7 @@ require "@tyrositeframework/start.php"; ?>
             </div>
     </section>
     <?php $cp_leads(); ?>
+    <?php $cp_crm(); ?>
 </main>
 
 <style>

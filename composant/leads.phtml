@@ -1,4 +1,7 @@
 <section id="leads-management">
+    <div class="background-image">
+        <img src="file_assets/Background-middle.png" alt="Background image" class="img-fluid bg-image">
+    </div>
     <div class="container">
         <div class="image-content">
             <img src="file_assets/img-section-leads.png" alt="Analyse des ventes" class="img-fluid">
@@ -33,17 +36,16 @@
     #leads-management {
 
         position: relative;
-        padding: px 0;
+        padding-bottom: 195px;
+        padding-top: 50px;
         overflow: hidden;
 
-        .background-shape {
+        .background-image {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 40%;
             height: 100%;
-            background: linear-gradient(135deg, #665DFF 30%, #8B00FF 70%);
-            clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
             z-index: 0;
         }
 
@@ -108,12 +110,15 @@ padding: 10px; */
             background-color: #47CFFF;
         }
 
-        .image-content img {
-            max-width: 100%;
-            height: auto;
+        .image-content {
+            width: 110%;
         }
 
+
         @media (max-width: 768px) {
+
+            padding-bottom: 10px;
+
             .container {
                 flex-direction: column;
                 align-items: center;
@@ -123,6 +128,20 @@ padding: 10px; */
             .text-content,
             .image-content {
                 max-width: 100%;
+            }
+
+            .image-content {
+                width: 100%;
+            }
+
+            .text-content {
+                padding: 0 10px;
+                text-align: center;
+            }
+
+            .dot {
+                width: 20px;
+                height: 10px;
             }
         }
 
