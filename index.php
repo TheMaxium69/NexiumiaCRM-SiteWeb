@@ -131,8 +131,52 @@ require "@tyrositeframework/start.php"; ?>
             background-color: #f5c9e9;
         }
 
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+                padding: 50px;
+                width: 100%;
+            }
+
+            .content-card {
+                width: 100%;
+                margin: 10px 0 10px 0;
+                padding: 20px;
+            }
+
+            .content-card h3,
+            p {
+                text-align: center;
+            }
+
+            .content-card .icon {
+                text-align: center;
+            }
+
+            .content-card .icon::before {
+                top: 55%;
+                left: 53%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
 
         @media (max-width: 768px) {
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
             .intro {
                 padding: 0 80px 0 80px;
             }
@@ -142,7 +186,7 @@ require "@tyrositeframework/start.php"; ?>
             }
 
             .cards {
-                padding: 0 20px 100px 20px;
+                padding: 0 20px 0 20px;
                 flex-direction: column;
                 align-items: center;
             }
