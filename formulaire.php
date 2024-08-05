@@ -33,7 +33,7 @@ $forms = [
     'quote' => [
         'title' => "Faire Un Devis",
         'description' => "Si vous souhaitez obtenir un devis, veuillez remplir le formulaire ci-dessous.",
-        'heading' => "Faire un devis",
+        'heading' => "Faire Un devis",
         'subheading' => "Nous vous fournirons un devis détaillé dans les plus brefs délais.",
         'content' => '
             <input type="text" placeholder="Nom de la société">
