@@ -200,14 +200,14 @@ $current_form = $forms[$form_type];
             }
 
             .intro {
-                padding: 20px 15px 60px 20px;
+                padding: 20px 15px 20px 20px;
             }
 
             .bg-color {
                 width: calc(100% - 40px);
                 left: 20px;
                 height: 250px;
-                top: 220px;
+                top: 190px;
             }
 
             .form-box {
