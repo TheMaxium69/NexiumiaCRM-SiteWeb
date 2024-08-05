@@ -47,10 +47,10 @@ $env_page = array(
         "css" => "index.css",
     ),
     2 => array(
-        "title" => "Exemple | " . $env_name,
-        "name" => "Exemple",
-        "url" => "./exemple.php",
-        "css" => "exemple.css",
+        "title" => "Formulaire | " . $env_name,
+        "name" => "Formulaire",
+        "url" => "./formulaire.php",
+        "css" => "formulaire.css",
     ),
     /*...*/
 );
