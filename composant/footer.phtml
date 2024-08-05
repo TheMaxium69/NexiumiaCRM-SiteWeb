@@ -22,8 +22,8 @@
                 <ul>
                     <li><a href="#">Liens Utiles</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="?form=contact">Contacte</a></li>
-                    <li><a href="#">Ce Lancer</a></li>
+                    <li><a href="formulaire.php?form=contact">Contacte</a></li>
+                    <li><a href="formulaire.php?form=quote">Ce Lancer</a></li>
                 </ul>
             </nav>
             <div class="arrow-up">
@@ -33,7 +33,7 @@
         <section id="links">
             <div class="link1">
                 <ul>
-                    <li><a href="">Tyrolim</a></li>
+                    <li><a href="https://tyrolium.fr">Tyrolim</a></li>
                     <li><a href="">CGU</a></li>
                     <li><a href="">CGV</a></li>
                     <li><a href="">Legal</a></li>
@@ -41,14 +41,14 @@
             </div>
             <div class="link2">
                 <ul>
-                    <li><a href="">Solution</a></li>
-                    <li><a href="">Produit</a></li>
-                    <li><a href="">Devis</a></li>
-                    <li><a href="">Se Connecter</a></li>
+                    <li><a href="#leads-management">Solution</a></li>
+                    <li><a href="#crm">Produit</a></li>
+                    <li><a href="formulaire.php?form=quote">Devis</a></li>
+                    <li><a href="formulaire.php?form=login">Se Connecter</a></li>
                 </ul>
             </div>
             <div class="adress">
-                <div class="adress1  border-box mb-1">
+                <div class="adress1  border-box mb-2">
                     <p>252 Avenue Jean Jaurès<br>Décines-Charpieu, France</p>
                 </div>
                 <div class="adress2  border-box">
@@ -57,7 +57,7 @@
             </div>
             <div class="button-container">
                 <img src="file_assets/Photo.png" alt="Image de fond" class="background-image img-fluid">
-                <button class="launch-button">Ce lancer</button>
+                <button class="launch-button"><a href="formulaire.php?form=quote">Ce lancer</a></button>
             </div>
         </section>
         <div class="Copyright text-center p-4">
@@ -165,24 +165,16 @@
     p {
         text-decoration: none;
         color: white;
+        padding-top: 10px;
     }
 
     .border-box {
         position: relative;
-        padding: 5px;
+        padding: 10px;
+        background: linear-gradient(#303030, #303030) padding-box,
+            linear-gradient(to right, transparent, transparent, white) border-box;
         border-radius: 15px;
-        overflow: hidden;
-    }
-
-    .border-box::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: 50%;
-        border-radius: 0 15px 15px 0;
-        background: linear-gradient(to right, transparent, white);
+        border: 1px solid transparent;
     }
 
     .button-container {
@@ -208,13 +200,17 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgba(255, 255, 255, 0.7);
-        color: black;
         padding: 5px 35px;
         text-align: center;
-        text-decoration: none;
         display: inline-block;
         font-size: 16px;
         border-radius: 5px;
+        border: none;
+    }
+
+    .launch-button a {
+        text-decoration: none;
+        color: black;
     }
 
     .Copyright {
@@ -223,21 +219,62 @@
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
+
+        #footer .container {
+            padding: 20px 40px;
+        }
+
+        .socials {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
         #links {
 
-            .link1 ul,
-            .link2 ul {
-                padding-right: 35px;
-            }
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 20px 0;
 
             .link1,
-            .link2 {
+            .link2,
+            .adress {
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 20px;
                 text-align: center;
             }
 
             .button-container {
                 width: 100%;
                 margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 100px;
+            }
+
+            .background-image {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            .launch-button {
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 10px 20px;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 5px;
+                border: none;
+                margin-top: 10px;
+            }
+
+            .launch-button a {
+                text-decoration: none;
+                color: black;
             }
         }
     }
@@ -245,11 +282,7 @@
 
     @media (max-width: 768px) {
         #footer .container {
-            padding: 15px;
-        }
-
-        .socials {
-            padding: 20px;
+            padding: 20px 40px;
         }
 
         .footer-brand {
@@ -289,23 +322,59 @@
         }
 
         #links {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .link1 ul,
-        .link2 ul {
-            padding-right: 35px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 20px 0;
         }
 
         .link1,
         .link2 {
+            flex: 1 1 45%;
+            margin-bottom: 10px;
             text-align: center;
+        }
+
+        .adress {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         .button-container {
             width: 100%;
             margin-top: 20px;
+        }
+
+        .button-container {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 85px;
+        }
+
+        .background-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .launch-button {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .launch-button a {
+            text-decoration: none;
+            color: black;
         }
     }
 </style>
