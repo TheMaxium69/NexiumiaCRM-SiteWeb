@@ -26,7 +26,9 @@
                     <p>Présentez Vos Produits Dans Des Fiches Produits Élégantes Et Faites</p>
                 </div>
             </div>
-            <button><a href="formulaire.php?form=quote">Commencer</a></button>
+            <div class="buttons">
+                <button><a href="formulaire.php?form=quote">Commencer</a></button>
+            </div>
         </div>
         <div class="background-image">
             <img src="file_assets/Background-end.png" alt="Background image" class="img-fluid bg-image">
@@ -67,9 +69,9 @@
             justify-content: space-between;
         }
 
-        .background-image .bg-image {
+        .background-image {
             position: absolute;
-            top: 0;
+            top: -20%;
             left: 60%;
             width: 40%;
             height: 100%;
@@ -110,9 +112,14 @@
             border-radius: 5px;
         }
 
+        .buttons {
+            cursor: pointer;
+        }
+
         button a {
             text-decoration: none;
             color: white;
+            cursor: pointer;
         }
 
         .image-content img {
@@ -138,11 +145,11 @@
                 text-align: center;
             }
 
-            .background-image .bg-image {
+            .background-image {
                 position: absolute;
-                top: 42%;
-                left: 25%;
-                width: 75%;
+                top: 38%;
+                left: 50%;
+                width: 50%;
                 height: 60%;
                 z-index: -1;
             }
@@ -176,7 +183,7 @@
                 width: 90%;
             }
 
-            .background-image .bg-image {
+            .background-image {
                 position: absolute;
                 top: 48%;
                 left: 25%;
