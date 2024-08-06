@@ -20,7 +20,7 @@ require "@tyrositeframework/start.php"; ?>
                     <h3>Paramètres Puissants</h3>
                     <p>Fournir un Excellent Service Client. Répondez à Plus de Tickets.</p>
                 </div>
-                <div class="content-card bg-white shadow">
+                <div class="content-card">
                     <div class="icon icon2">
                         <i class="ri-user-settings-line"></i>
                     </div>
@@ -65,6 +65,7 @@ require "@tyrositeframework/start.php"; ?>
             margin-top: 30px;
             padding: 0 40px 100px 40px;
             width: 100%;
+            cursor: pointer;
         }
 
         .content-card {
@@ -73,7 +74,14 @@ require "@tyrositeframework/start.php"; ?>
             padding: 20px 70px 0 25px;
             text-align: center;
             width: 30%;
+            transition: all 0.3s ease;
         }
+
+        .content-card:hover {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
 
         .content-card h3 {
             font-family: "Jost", sans-serif;
