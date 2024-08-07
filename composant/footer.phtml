@@ -10,11 +10,11 @@
                 </a>
             </div>
             <div class="icons-social">
-                <a href=""><i class="ri-instagram-line fs-5"></i></a>
-                <a href=""><i class="ri-facebook-circle-fill fs-5"></i></a>
-                <a href=""><i class="ri-twitter-fill fs-5"></i></a>
-                <a href=""><i class="ri-linkedin-box-fill fs-5"></i></a>
-                <a href=""><i class="ri-youtube-fill fs-5"></i></a>
+                <a href=""><i class="ri-instagram-line fs-5 instagram"></i></a>
+                <a href=""><i class="ri-facebook-circle-fill fs-5 facebook"></i></a>
+                <a href=""><i class="ri-twitter-fill fs-5 twitter"></i></a>
+                <a href=""><i class="ri-linkedin-box-fill fs-5 linkedin"></i></a>
+                <a href=""><i class="ri-youtube-fill fs-5 youtube"></i></a>
             </div>
         </section>
         <section class="utils-link d-flex justify-content-center justify-content-lg-between">
@@ -98,6 +98,40 @@
         padding: 0 5px;
     }
 
+    /* <a href=""><i class="ri-instagram-line fs-5"></i></a><a href="">
+    <i class="ri-facebook-circle-fill fs-5"></i></a><a href="">
+    <i class="ri-twitter-fill fs-5"></i></a><a href="">
+    <i class="ri-linkedin-box-fill fs-5"></i></a><a href="">
+    <i class="ri-youtube-fill fs-5"></i></a>
+     */
+
+    .icons-social a:hover {
+        transform: scale(1.2);
+    }
+
+    .instagram:hover {
+        background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .facebook:hover {
+        color: #3b5998;
+    }
+
+    .twitter:hover {
+        color: #1DA1F2;
+    }
+
+    .linkedin:hover {
+        color: #0077B5;
+    }
+
+    .youtube:hover {
+        color: #FF0000;
+    }
+
+
     .utils-link {
         border-bottom: 1px solid #4a4a4a;
         padding: 20px 0;
@@ -118,6 +152,10 @@
         text-decoration: none;
         color: white;
         font-size: 15px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
     }
 
     .arrow-up {
@@ -156,6 +194,12 @@
         text-decoration: none;
         color: white;
     }
+
+    .link1 a:hover,
+    .link2 a:hover {
+        text-decoration: underline;
+    }
+
 
     .adress {
         display: flex;

@@ -46,6 +46,7 @@ $forms = [
 ];
 
 $current_form = $forms[$form_type];
+
 ?>
 
 <header> <?php $cp_navbar(); ?> </header>
