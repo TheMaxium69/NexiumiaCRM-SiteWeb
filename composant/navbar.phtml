@@ -11,13 +11,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.php#leads-management">Solution</a>
+                        <a class="nav-link" href="index.php#leads-management">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.php#crm">Products</a>
+                        <a class="nav-link" href="index.php#crm">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="formulaire.php?form=quote">Devis</a>
+                        <a class="nav-link" href="formulaire.php?form=quote">Devis</a>
                     </li>
                     <li class="nav-item">
                         <button type="button">
@@ -60,9 +60,19 @@
             border: none;
         }
 
+        .nav-item button:hover {
+            background-color: #606060;
+        }
+
         .nav-item button a {
             color: white;
         }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+
 
         @media (max-width: 992px) {
             .navbar-toggler {
