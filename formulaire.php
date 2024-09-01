@@ -11,11 +11,13 @@ $forms = [
         'heading' => "Se connecter",
         'subheading' => "Ut consequat facilisis et duo lorem et ipsum invidunt tempor. Consetetur nonumy accusam iusto wisi feugiat stet ut no iusto consequat.",
         'content' => '
-            <input type="text" placeholder="url de la société">
-            <input type="email" placeholder="EMAIL">
-            <input type="password" placeholder="Enter your password">
+            <input type="text" name="url" placeholder="Url de la société">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="mdp" placeholder="Entrer votre mot de passe">
             <button type="submit" class="btn btn-sm">Envoyé</button>
-        '
+        ',
+        'action' => 'https://api.nexumiacrm.fr/connect.php',
+        'method' => 'POST'
     ],
     'contact' => [
         'title' => "Nous Contacter",
@@ -23,12 +25,14 @@ $forms = [
         'heading' => "Nous contacter",
         'subheading' => "Pour toute question, n\'hésitez pas à nous contacter. Nous sommes à votre disposition.",
         'content' => '
-            <input type="text" placeholder="Nom">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Sujet">
-            <textarea placeholder="Message"></textarea>
+            <input type="text" name="name" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="context" placeholder="Sujet">
+            <textarea placeholder="Message" name="message"></textarea>
             <button type="submit" class="btn btn-sm">Envoyé</button>
-        '
+        ',
+        'action' => 'https://formspree.io/f/xanwvrgp',
+        'method' => 'POST'
     ],
     'quote' => [
         'title' => "Faire Un Devis",
@@ -36,12 +40,14 @@ $forms = [
         'heading' => "Faire Un devis",
         'subheading' => "Nous vous fournirons un devis détaillé dans les plus brefs délais.",
         'content' => '
-            <input type="text" placeholder="Nom de la société">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Sujet">
-            <textarea placeholder="Description du projet"></textarea>
+            <input type="text" name="company" placeholder="Nom de la société">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="context" placeholder="Sujet">
+            <textarea placeholder="Description du projet" name="desc"></textarea>
             <button type="submit" class="btn btn-sm">Envoyé</button>
-        '
+        ',
+        'action' => 'https://formspree.io/f/mldrzqya',
+        'method' => 'POST'
     ],
 ];
 
@@ -64,7 +70,7 @@ $current_form = $forms[$form_type];
                     <h2><?= $current_form['heading']; ?></h2>
                     <p><?= $current_form['subheading']; ?></p>
                 </div>
-                <form>
+                <form action="<?= $current_form['action']; ?>" method="<?= $current_form['method']; ?>">
                     <?= $current_form['content']; ?>
                 </form>
             </div>
