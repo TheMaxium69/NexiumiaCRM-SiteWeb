@@ -4,8 +4,8 @@
             <h1>La Plateforme CRM<br> Que Toute Votre <br> Entreprise Adorera</h1>
             <p>Fournir Un Excellent Service Client, Répondre À Plus De Tickets Tout-En-Un Principalement Un Logiciel.</p>
             <div class="buttons">
-                <button><a href="formulaire.php?form=quote">Commencer</a></button>
-                <button class="btn-secondary"><a href="#crm">Comment Ça Fonctionne</a></button>
+                <button onclick="window.location.href = 'formulaire.php?form=quote';"><a href="formulaire.php?form=quote">Commencer</a></button>
+                <button class="btn-secondary" onclick="window.location.href = '#crm';"><a href="#crm">Comment Ça Fonctionne</a></button>
             </div>
             <div class="awards">
                 <img src="file_assets/fivestar.png" alt="5 Star Awards" width="320" height="100" class="img-fluid">
@@ -137,6 +137,9 @@
 
         @media (min-width: 768px) and (max-width: 1023px) {
 
+            overflow: hidden!important;
+
+
             .content p {
                 color: black;
             }
@@ -179,6 +182,7 @@
 
         @media (max-width: 768px) {
 
+            overflow: hidden!important;
             padding: 150px 0 50px 0;
 
             .awards {

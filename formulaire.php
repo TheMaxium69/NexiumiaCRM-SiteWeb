@@ -6,10 +6,10 @@ $form_type = isset($_GET['form']) ? $_GET['form'] : 'login';
 
 $forms = [
     'login' => [
-        'title' => "Se Connecter",
-        'description' => "Consectetur cupidatat enim aliqua eu laboris dolore nulla ex sint ex. Non tempor sunt non sint ad non deserunt enim ad duis sint et pariatur. Ad sit aute anim eiusmod incididunt enim.",
+        'title' => "Se connecter",
+        'description' => "Formulaire de connexion à votre CRM",
         'heading' => "Se connecter",
-        'subheading' => "Ut consequat facilisis et duo lorem et ipsum invidunt tempor. Consetetur nonumy accusam iusto wisi feugiat stet ut no iusto consequat.",
+        'subheading' => "Veuillez remplire toute les imformations de ce formulaire.",
         'content' => '
             <input type="text" name="url" placeholder="Url de la société">
             <input type="email" name="email" placeholder="Email">
@@ -20,10 +20,10 @@ $forms = [
         'method' => 'POST'
     ],
     'contact' => [
-        'title' => "Nous Contacter",
-        'description' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat egestas magna, nec ultrices augue.",
+        'title' => "Nous contacter",
+        'description' => "Pour toute question, n'hésitez pas à nous contacter. Nous sommes à votre disposition.",
         'heading' => "Nous contacter",
-        'subheading' => "Pour toute question, n\'hésitez pas à nous contacter. Nous sommes à votre disposition.",
+        'subheading' => "Pour toute question, n'hésitez pas à nous contacter. Nous sommes à votre disposition.",
         'content' => '
             <input type="text" name="name" placeholder="Nom">
             <input type="email" name="email" placeholder="Email">
@@ -35,9 +35,9 @@ $forms = [
         'method' => 'POST'
     ],
     'quote' => [
-        'title' => "Faire Un Devis",
+        'title' => "Faire un devis",
         'description' => "Si vous souhaitez obtenir un devis, veuillez remplir le formulaire ci-dessous.",
-        'heading' => "Faire Un devis",
+        'heading' => "Faire un devis",
         'subheading' => "Nous vous fournirons un devis détaillé dans les plus brefs délais.",
         'content' => '
             <input type="text" name="company" placeholder="Nom de la société">

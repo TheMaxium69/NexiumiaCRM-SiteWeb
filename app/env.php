@@ -52,7 +52,24 @@ $env_page = array(
         "url" => "./formulaire.php",
         "css" => "formulaire.css",
     ),
-    /*...*/
+    3 => array(
+        "title" => "Mention Légal | " . $env_name,
+        "name" => "Mention Légal",
+        "url" => "./legal.php",
+        "css" => "legal.css",
+    ),
+    4 => array(
+        "title" => "CGU | " . $env_name,
+        "name" => "CGU",
+        "url" => "./cgu.php",
+        "css" => "cgu.css",
+    ),
+    5 => array(
+        "title" => "CGV | " . $env_name,
+        "name" => "CGV",
+        "url" => "./cgv.php",
+        "css" => "cgv.css",
+    )
 );
 
 // FILE CSS GLOBAL
