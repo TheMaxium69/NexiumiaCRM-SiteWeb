@@ -41,7 +41,7 @@ $env_page = array(
     0 => "404 | " . $env_name,
     //Page
     1 => array(
-        "title" => "Accueil | " . $env_name,
+        "title" => $env_name,
         "name" => "Accueil",
         "url" => "./",
         "css" => "index.css",
