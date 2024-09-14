@@ -44,7 +44,8 @@ require "@tyrositeframework/start.php"; ?>
     #premium-content {
 
         .intro {
-            padding: 50px 100px 0 100px;
+            /*padding: 50px 100px 0 100px;*/
+            padding: 225px 100px 0 100px;
         }
 
         .intro h2 {
@@ -234,8 +235,6 @@ require "@tyrositeframework/start.php"; ?>
     }
 </style>
 
-
-<?php $js_exemple(); ?>
 
 <footer><?php $cp_footer(); ?></footer>
 

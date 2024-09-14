@@ -235,8 +235,6 @@ $current_form = $forms[$form_type];
     }
 </style>
 
-<?php $js_exemple(); ?>
-
 <footer><?php $cp_footer(); ?></footer>
 
 <?php require "@tyrositeframework/end.php"; ?>

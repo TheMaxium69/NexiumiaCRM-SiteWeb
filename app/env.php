@@ -2,7 +2,7 @@
 
 /*************************
  *
- *     SYSTEME VARIABLE
+ *    SYSTEME VARIABLE
  *
  ************************/
 
@@ -29,10 +29,10 @@ $SALT = "app/salt." . $APP_ENV . ".php";
  ************************/
 
 //Variable GLOBAL
-$env_name = "NexumiaCRM";
+$env_name = "NexiumiaCRM";
 $env_logo = $SYSTEM_ASSETS . "logo.png";
-$env_url = "https://nexumiacrm.fr"; /* for <meta> */
-$env_desc = "Le NexumiaCRM est le CRM de l'entreprise Tyrolium"; /* for <meta> */
+$env_url = "https://nexiumiacrm.fr"; /* for <meta> */
+$env_desc = "NexiumiaCRM est le CRM de l'entreprise Tyrolium"; /* for <meta> */
 $env_lang = "fr"; /* for <html lang=""> */
 
 // PAGE MANAGEMENT
@@ -71,4 +71,3 @@ $env_js_global = array(
  *
  ************************/
 
-$env_titre = "HelloWorld";
