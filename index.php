@@ -10,7 +10,7 @@ require "@tyrositeframework/start.php"; ?>
         <div class="container">
             <div class="intro text-center">
                 <h2>Explorez Les Fonctionnalités Premium</h2>
-                <p>Suite logicielle unique et puissante pour gérer l'ensemble de votre entreprise, présentée par une entreprise ayant une vision à long terme pour transformer votre façon de travailler. </p>
+                <p>Une suite logicielle complète et performante pour gérer l'ensemble de votre entreprise, proposée par une société avec une vision à long terme pour révolutionner votre manière de travailler.</p>
             </div>
             <div class="cards">
                 <div class="content-card">
@@ -25,14 +25,14 @@ require "@tyrositeframework/start.php"; ?>
                         <i class="ri-user-settings-line"></i>
                     </div>
                     <h3>Facile À Utiliser</h3>
-                    <p>Utilisez la Chronologie pour Planifier les Projets en fonction de la façon dont les pièces s'emboitent.</p>
+                    <p>Utilisez la chronologie pour planifier les projets en tenant compte de l'agencement des différentes étapes.</p>
                 </div>
                 <div class="content-card">
                     <div class="icon icon3">
                         <i class="bi bi-patch-check"></i>
                     </div>
                     <h3>Plateforme Intégrée</h3>
-                    <p>Google, Notion, Microsoft</p>
+                    <p>Google, Notion, Microsoft, Useritium</p>
                 </div>
             </div>
     </section>
