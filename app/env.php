@@ -32,7 +32,7 @@ $SALT = "app/salt." . $APP_ENV . ".php";
 $env_name = "NexiumiaCRM";
 $env_logo = $SYSTEM_ASSETS . "logo.png";
 $env_url = "https://nexiumiacrm.fr"; /* for <meta> */
-$env_desc = "NexiumiaCRM est le CRM de l'entreprise Tyrolium"; /* for <meta> */
+$env_desc = "NexiumiaCRM est une solution CRM complète développée par Tyrolium, conçue pour optimiser la gestion de la relation client et améliorer l'efficacité opérationnelle des entreprises."; /* for <meta> */
 $env_lang = "fr"; /* for <html lang=""> */
 
 // PAGE MANAGEMENT

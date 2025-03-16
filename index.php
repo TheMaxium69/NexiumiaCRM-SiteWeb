@@ -18,7 +18,7 @@ require "@tyrositeframework/start.php"; ?>
                         <i class="ri-settings-4-line"></i>
                     </div>
                     <h3>Paramètres Puissants</h3>
-                    <p>Fournir un Excellent Service Client. Répondez à Plus de Tickets.</p>
+                    <p>Fournissez un excellent service client et traitez davantage de tickets.</p>
                 </div>
                 <div class="content-card">
                     <div class="icon icon2">

@@ -9,27 +9,27 @@ $forms = [
         'title' => "Se connecter",
         'description' => "Formulaire de connexion à votre CRM",
         'heading' => "Se connecter",
-        'subheading' => "Veuillez remplire toute les imformations de ce formulaire.",
+        'subheading' => "Veuillez remplir toutes les informations de ce formulaire.",
         'content' => '
             <input type="text" name="url" placeholder="Url de la société">
             <input type="email" name="email" placeholder="Email">
             <input type="password" name="mdp" placeholder="Entrer votre mot de passe">
-            <button type="submit" class="btn btn-sm">Envoyé</button>
+            <button type="submit" class="btn btn-sm">Envoyer</button>
         ',
         'action' => 'https://api.nexumiacrm.fr/connect.php',
         'method' => 'POST'
     ],
     'contact' => [
         'title' => "Nous contacter",
-        'description' => "Pour toute question, n'hésitez pas à nous contacter. Nous sommes à votre disposition.",
+        'description' => "Contactez-nous pour toute question.",
         'heading' => "Nous contacter",
-        'subheading' => "Pour toute question, n'hésitez pas à nous contacter. Nous sommes à votre disposition.",
+        'subheading' => "N'hésitez pas à nous contacter pour toute question.",
         'content' => '
             <input type="text" name="name" placeholder="Nom">
             <input type="email" name="email" placeholder="Email">
             <input type="text" name="context" placeholder="Sujet">
             <textarea placeholder="Message" name="message"></textarea>
-            <button type="submit" class="btn btn-sm">Envoyé</button>
+            <button type="submit" class="btn btn-sm">Envoyer</button>
         ',
         'action' => 'https://formspree.io/f/xanwvrgp',
         'method' => 'POST'
@@ -44,7 +44,7 @@ $forms = [
             <input type="email" name="email" placeholder="Email">
             <input type="text" name="context" placeholder="Sujet">
             <textarea placeholder="Description du projet" name="desc"></textarea>
-            <button type="submit" class="btn btn-sm">Envoyé</button>
+            <button type="submit" class="btn btn-sm">Envoyer</button>
         ',
         'action' => 'https://formspree.io/f/mldrzqya',
         'method' => 'POST'
