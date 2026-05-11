@@ -165,7 +165,8 @@
 /* ══════════════════════════════════════════════════════════════════════════ */
 
 .nc-header {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   margin-top: 63px;
@@ -252,11 +253,13 @@
 /* Header content */
 
 .nc-header__content {
+  flex: 1;
   position: relative;
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 5rem 2rem 3rem;
   gap: 1.25rem;
@@ -304,6 +307,7 @@
   letter-spacing: -0.03em;
   line-height: 1;
   margin: 0;
+  max-width: 100%;
   background: linear-gradient(135deg, #7aaeff 0%, #ffffff 50%, #ff7777 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1115,7 +1119,7 @@
   }
 
   .nc-header__title {
-    font-size: clamp(2rem, 12vw, 4rem);
+    font-size: clamp(1.75rem, 8.5vw, 3.5rem);
   }
 
   .nc-header__waves svg {
