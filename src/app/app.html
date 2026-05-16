@@ -25,11 +25,11 @@
         : 'Le CRM professionnel conçu avec le savoir-faire français, hébergé sur des serveurs sécurisés en France.' }}
     </p>
     <div class="nc-header__actions">
-      <a href="#cta" class="nc-btn-primary">
+      <a (click)="scrollTo('cta')" class="nc-btn-primary">
         <i class="ri-mail-send-line"></i>
         {{ lang() === 'en' ? 'Request a quote' : 'Demander un devis' }}
       </a>
-      <a href="#features" class="nc-btn-ghost">
+      <a (click)="scrollTo('features')" class="nc-btn-ghost">
         {{ lang() === 'en' ? 'Discover features' : 'Voir les fonctionnalités' }}
         <i class="ri-arrow-down-line"></i>
       </a>
@@ -188,7 +188,7 @@
           <li><i class="ri-check-line"></i>{{ lang() === 'en' ? 'Custom onboarding' : 'Onboarding personnalisé' }}</li>
           <li><i class="ri-check-line"></i>{{ lang() === 'en' ? '1 administrator access key included' : '1 clé d\'accès administrateur incluse' }}</li>
         </ul>
-        <a href="#cta" class="nc-btn-primary nc-btn-primary--full">
+        <a (click)="scrollTo('cta')" class="nc-btn-primary nc-btn-primary--full">
           {{ lang() === 'en' ? 'Get a quote' : 'Obtenir un devis' }}
           <i class="ri-arrow-right-line"></i>
         </a>
@@ -211,7 +211,7 @@
           <li><i class="ri-check-line"></i>{{ lang() === 'en' ? 'Full audit trail' : 'Traçabilité complète' }}</li>
           <li><i class="ri-check-line"></i>{{ lang() === 'en' ? 'Add or remove at any time' : 'Ajout ou retrait à tout moment' }}</li>
         </ul>
-        <a href="#cta" class="nc-btn-outline">
+        <a (click)="scrollTo('cta')" class="nc-btn-outline">
           {{ lang() === 'en' ? 'Ask for pricing' : 'Demander un tarif' }}
           <i class="ri-arrow-right-line"></i>
         </a>
@@ -297,7 +297,13 @@
 <!-- ── CTA ────────────────────────────────────────────────────────────── -->
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
-<section id="cta" class="nc-section nc-cta-section">
+
+<tyro-ui-cta id="cta"
+    [title]="lang() === 'en' ? 'Request your<br>custom quote.' : 'Demandez votre<br>devis personnalisé.'"
+
+></tyro-ui-cta>
+
+<section class="nc-section nc-cta-section">
   <div class="nc-container">
     <div class="nc-cta-card">
       <div class="nc-cta-deco nc-cta-deco--1"></div>
@@ -305,7 +311,7 @@
 
       <div class="nc-cta-card__text">
         <p class="nc-label nc-label--white">{{ lang() === 'en' ? 'Ready to get started?' : 'Prêt à vous lancer ?' }}</p>
-        <h2 class="nc-cta-card__title" [innerHTML]="lang() === 'en' ? 'Request your<br>custom quote.' : 'Demandez votre<br>devis personnalisé.'"></h2>
+        <h2 class="nc-cta-card__title" >test</h2>
         <p class="nc-cta-card__desc">
           {{ lang() === 'en'
             ? 'Tell us about your team and your needs. We\'ll come back to you within 48 hours with a tailored offer.'

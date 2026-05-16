@@ -1,9 +1,9 @@
 import { Component, computed, inject, ViewEncapsulation } from '@angular/core';
-import { ITyroUiNavbarPages, TyroUiFooter, TyroUiNavbar, TyroUiLangService } from 'tyrolium-ui';
+import {ITyroUiNavbarPages, TyroUiFooter, TyroUiNavbar, TyroUiLangService, TyroUiCTA} from 'tyrolium-ui';
 
 @Component({
   selector: 'app-root',
-  imports: [TyroUiNavbar, TyroUiFooter],
+  imports: [TyroUiNavbar, TyroUiFooter, TyroUiCTA],
   templateUrl: './app.html',
   styleUrl: './app.css',
   encapsulation: ViewEncapsulation.None,
@@ -39,17 +39,17 @@ export class App {
     this.langService.lang() === 'en'
       ? [
           { label: 'Home',     link: '/',           icon: 'ri-home-line' },
-          { label: 'Features', link: '/#features',  icon: 'ri-apps-line' },
-          { label: 'Pricing',  link: '/#pricing',   icon: 'ri-price-tag-3-line' },
-          { label: 'Trust',    link: '/#trust',     icon: 'ri-shield-check-line' },
-          { label: 'Quote',    link: '/#cta',       icon: 'ri-mail-send-line' },
+          { label: 'Features', ancre: 'features',  icon: 'ri-apps-line' },
+          { label: 'Pricing',  ancre: 'pricing',   icon: 'ri-price-tag-3-line' },
+          { label: 'Trust',    ancre: 'trust',     icon: 'ri-shield-check-line' },
+          { label: 'Quote',    ancre: 'cta',       icon: 'ri-mail-send-line' },
         ]
       : [
           { label: 'Accueil',       link: '/',           icon: 'ri-home-line' },
-          { label: 'Fonctionnalités', link: '/#features', icon: 'ri-apps-line' },
-          { label: 'Tarifs',        link: '/#pricing',   icon: 'ri-price-tag-3-line' },
-          { label: 'Confiance',     link: '/#trust',     icon: 'ri-shield-check-line' },
-          { label: 'Devis',         link: '/#cta',       icon: 'ri-mail-send-line' },
+          { label: 'Fonctionnalités', ancre: 'features', icon: 'ri-apps-line' },
+          { label: 'Tarifs',        ancre: 'pricing',   icon: 'ri-price-tag-3-line' },
+          { label: 'Confiance',     ancre: 'trust',     icon: 'ri-shield-check-line' },
+          { label: 'Devis',         ancre: 'cta',       icon: 'ri-mail-send-line' },
         ]
   );
 
@@ -137,7 +137,7 @@ export class App {
 
   readonly trustPoints = [
     {
-      icon: 'ri-france-line',
+      icon: 'ri-verified-badge-line',
       title: 'Hébergement en France',
       titleEn: 'Hosted in France',
       desc: 'Vos données restent sur le territoire français. Souveraineté numérique garantie.',
@@ -167,4 +167,13 @@ export class App {
   ];
 
   readonly particles = Array.from({ length: 30 }, (_, i) => i);
+
+  scrollTo(ancre:string) {
+    const element = document.getElementById(ancre);
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - 70;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+  }
 }
