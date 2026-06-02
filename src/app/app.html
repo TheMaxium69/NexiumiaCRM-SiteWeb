@@ -298,40 +298,19 @@
 <!-- ══════════════════════════════════════════════════════════════════════ -->
 
 
-<tyro-ui-cta id="cta"
-    [title]="lang() === 'en' ? 'Request your<br>custom quote.' : 'Demandez votre<br>devis personnalisé.'"
-
-></tyro-ui-cta>
-
-<section class="nc-section nc-cta-section">
-  <div class="nc-container">
-    <div class="nc-cta-card">
-      <div class="nc-cta-deco nc-cta-deco--1"></div>
-      <div class="nc-cta-deco nc-cta-deco--2"></div>
-
-      <div class="nc-cta-card__text">
-        <p class="nc-label nc-label--white">{{ lang() === 'en' ? 'Ready to get started?' : 'Prêt à vous lancer ?' }}</p>
-        <h2 class="nc-cta-card__title" >test</h2>
-        <p class="nc-cta-card__desc">
-          {{ lang() === 'en'
+<tyro-ui-cta
+     [label]="lang() === 'en' ? 'Ready to get started?' : 'Prêt à vous lancer ?'"
+     [title]="lang() === 'en' ? 'Request your<br>custom quote.' : 'Demandez votre<br>devis personnalisé.'"
+     [content]="lang() === 'en'
             ? 'Tell us about your team and your needs. We\'ll come back to you within 48 hours with a tailored offer.'
-            : 'Parlez-nous de votre équipe et de vos besoins. Nous vous revenons sous 48h avec une offre sur mesure.' }}
-        </p>
-      </div>
-
-      <div class="nc-cta-card__actions">
-        <a href="mailto:contact@nexiumiacrm.fr" class="nc-btn-white">
-          <i class="ri-mail-send-line"></i>
-          {{ lang() === 'en' ? 'Send us an email' : 'Envoyer un e-mail' }}
-        </a>
-        <a href="#features" class="nc-btn-transparent">
-          {{ lang() === 'en' ? 'See all features' : 'Voir toutes les fonctionnalités' }}
-          <i class="ri-arrow-right-line"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+            : 'Parlez-nous de votre équipe et de vos besoins. Nous vous revenons sous 48h avec une offre sur mesure.'"
+     [btn]="lang() === 'en' ? 'Contact us' : 'Contactez-nous'"
+     [btnIcon]="`<i class='ri-mail-send-line'></i>`"
+     [btnRouterLink]="'/contact'"
+     [subbtn]=" lang() === 'en' ? 'See all features' : 'Voir toutes les fonctionnalités' "
+     [subAncreLink]="'#features'"
+     [notBack]="true"
+></tyro-ui-cta>
 
 <tyro-ui-footer
   [project]="PROJECT_NAME"
