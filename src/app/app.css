@@ -637,8 +637,16 @@
 }
 
 [data-theme="dark"] .nc-feature-card__icon {
-  background: linear-gradient(135deg, rgba(5,51,200,0.2), rgba(191,0,0,0.12));
-  border-color: rgba(5,51,200,0.28);
+  background: linear-gradient(135deg, rgba(5,51,200,0.45), rgba(191,0,0,0.3));
+  border-color: rgba(5,51,200,0.5);
+}
+
+[data-theme="dark"] .nc-feature-card__icon i {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  background-clip: unset;
+  color: #ffffff;
 }
 
 .nc-feature-card__title {
@@ -726,8 +734,16 @@
 }
 
 [data-theme="dark"] .nc-price-card__icon {
-  background: linear-gradient(135deg, rgba(5,51,200,0.2), rgba(191,0,0,0.12));
-  border-color: rgba(5,51,200,0.28);
+  background: linear-gradient(135deg, rgba(5,51,200,0.45), rgba(191,0,0,0.3));
+  border-color: rgba(5,51,200,0.5);
+}
+
+[data-theme="dark"] .nc-price-card__icon i {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  background-clip: unset;
+  color: #ffffff;
 }
 
 .nc-price-card__name {
@@ -922,8 +938,16 @@
 }
 
 [data-theme="dark"] .nc-trust-card__icon {
-  background: linear-gradient(135deg, rgba(5,51,200,0.2), rgba(191,0,0,0.12));
-  border-color: rgba(5,51,200,0.28);
+  background: linear-gradient(135deg, rgba(5,51,200,0.45), rgba(191,0,0,0.3));
+  border-color: rgba(5,51,200,0.5);
+}
+
+[data-theme="dark"] .nc-trust-card__icon i {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  background-clip: unset;
+  color: #ffffff;
 }
 
 .nc-trust-card__title {
