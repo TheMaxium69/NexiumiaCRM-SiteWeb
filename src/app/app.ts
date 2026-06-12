@@ -25,7 +25,7 @@ export class App {
   public PROJECT_CONTENT = computed(() =>
     this.langService.lang() === 'en'
       ? `<strong>NexiumiaCRM</strong> is the <strong>professional CRM</strong> developed by Tyrolium. Manage your contacts, pipeline and business with a tool built with French expertise and hosted on secure servers in France by SolidServ.`
-      : `<strong>NexiumiaCRM</strong> est le <strong>CRM professionnel</strong> développé par Tyrolium. Gérez vos contacts, votre pipeline et votre activité avec un outil conçu avec le savoir-faire français et hébergé sur des serveurs sécurisés en France par SolidServ.`
+      : `<strong>NexiumiaCRM</strong> est un <strong>CRM professionnel</strong>. Gérez vos contacts, votre pipeline et votre activité avec un outil hébergé et conçu avec le savoir-faire français. <em>Une filiale de Tyrolium.</em>`
   );
 
   readonly lang = this.langService.lang;
