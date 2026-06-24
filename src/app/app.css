@@ -409,6 +409,7 @@
 .nc-sidebar-logo img {
   display: block;
   filter: brightness(1.2);
+  object-fit: contain;
 }
 
 .nc-sidebar-item {
